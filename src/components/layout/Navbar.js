@@ -2,6 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 import SignedinLinks from "./Signedinlinks";
+import SignedoutLinks from "./Signedoutlinks";
 
 const Navbar = () => {
   return (
@@ -23,6 +24,7 @@ const Navbar = () => {
           <span class="navbar-toggler-icon"></span>
         </button>
         <SignedinLinks />
+        <SignedoutLinks />
       </div>
     </div>
   );
