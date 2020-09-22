@@ -6,7 +6,7 @@ import SignedoutLinks from "./Signedoutlinks";
 
 const Navbar = () => {
   return (
-    <div className="navbar navbar-expand-lg navbar-light bg-light">
+    <div className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <Link to="/" className="navbar-brand h1">
           MARIOAPP
