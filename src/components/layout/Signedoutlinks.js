@@ -1,8 +1,8 @@
 import React from "react";
-import Signin from "../auth/Signin";
+import SignIn from "../auth/SignIn";
 import { NavLink } from "react-router-dom";
 
-const SignedoutLinks = () => {
+const SignedOutLinks = () => {
   return (
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ml-auto">
@@ -12,7 +12,7 @@ const SignedoutLinks = () => {
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink exact to="/Signin" className="nav-link">
+          <NavLink to="/" className="nav-link">
             Login
           </NavLink>
         </li>
@@ -26,4 +26,4 @@ const SignedoutLinks = () => {
   );
 };
 
-export default SignedoutLinks;
+export default SignedOutLinks;
