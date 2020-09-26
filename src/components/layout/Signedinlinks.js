@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const SignedinLinks = () => {
+const SignedInLinks = () => {
   return (
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ml-auto">
@@ -28,4 +28,4 @@ const SignedinLinks = () => {
   );
 };
 
-export default SignedinLinks;
+export default SignedInLinks;
