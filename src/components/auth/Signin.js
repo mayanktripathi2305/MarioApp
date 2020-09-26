@@ -1,27 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Signin = () => {
+const SignIn = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handlePassword = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    console.log("email, password", email, password);
+  };
   return (
-    <form>
-      <div className="form-group">
-        <label for="emailID">Email ID</label>
-        <input
-          type="email"
-          id="emailID"
-          className="form-control"
-          aria-describedby="emailhelp"
-        ></input>
-        <small id="emailHelp" className="form-text text-muted">
-          We will never share your email ID
-        </small>
-      </div>
+    <div className="container">
+      <form>
+        <h3>Sign In</h3>
+        <div className="form-group">
+          <label htmlFor="emailID">Email ID</label>
+          <input
+            type="email"
+            id="emailID"
+            className="form-control"
+            aria-describedby="emailhelp"
+            onChange={handleEmail}
+          ></input>
+          <small id="emailHelp" className="form-text text-muted">
+            We will never share your email ID
+          </small>
+        </div>
 
-      <div className="form-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" className="form-control"></input>
-      </div>
-    </form>
+        <div className="form-group">
+          <label htmlFor="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            className="form-control"
+            onChange={handlePassword}
+          ></input>
+        </div>
+        <button
+          type="submit"
+          className="btn btn-primary"
+          onClick={handleSubmit}
+        >
+          Sign In
+        </button>
+      </form>
+    </div>
   );
 };
 
-export default Signin;
+export default SignIn;
