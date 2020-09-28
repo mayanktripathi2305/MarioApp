@@ -7,12 +7,12 @@ const SignedOutLinks = () => {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-          <NavLink to="/" className="nav-link">
+          <NavLink to="/SignUp" className="nav-link">
             Sign Up
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/" className="nav-link">
+          <NavLink to="/SignIn" className="nav-link">
             Login
           </NavLink>
         </li>
