@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const CreateProject = () => {
   const [title, setTitle] = useState("");
@@ -16,7 +16,14 @@ const CreateProject = () => {
     e.preventDefault();
 
     console.log("Project Details", title, description);
+
+    setTitle("");
+    setDescription("");
   };
+
+  useEffect(() => {
+    console.log("Test");
+  }, []);
   return (
     <div className="container">
       <form>
